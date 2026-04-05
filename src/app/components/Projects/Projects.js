@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import styles from "./Projects.module.css";
+import { FaGithub} from "react-icons/fa";
 
 const projects = [
   {
