@@ -51,3 +51,81 @@
 .item:hover p {
   color: var(--text);
 }
+
+/* =========================
+   TABLET (≤1024px)
+========================= */
+@media (max-width: 1024px) {
+  .tech {
+    padding: 25px 10%;
+  }
+
+  .tech h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+
+  .grid {
+    gap: 30px;
+  }
+
+  .icon {
+    font-size: 2.5rem;
+  }
+}
+
+
+/* =========================
+   MOBILE (≤768px)
+========================= */
+@media (max-width: 768px) {
+  .tech {
+    padding: 20px 5%;
+    text-align: center;
+  }
+
+  .tech h2 {
+    font-size: 2rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 25px;
+  }
+
+  .icon {
+    font-size: 2.2rem;
+  }
+
+  .item p {
+    font-size: 0.85rem;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE (≤480px)
+========================= */
+@media (max-width: 480px) {
+  .tech {
+    padding: 20px;
+  }
+
+  .tech h2 {
+    font-size: 1.7rem;
+    margin-bottom: 30px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* cleaner 2-column layout */
+    gap: 20px;
+  }
+
+  .icon {
+    font-size: 2rem;
+  }
+
+  .item p {
+    font-size: 0.8rem;
+  }
+}

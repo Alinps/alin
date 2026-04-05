@@ -38,3 +38,78 @@
   background: var(--primary);
   color: var(--bg);
 }
+
+/* =========================
+   TABLET (≤1024px)
+========================= */
+@media (max-width: 1024px) {
+  .contact {
+    padding: 100px 5%;
+  }
+
+  .contact h2 {
+    font-size: 2.5rem;
+  }
+
+  .container {
+    max-width: 500px;
+  }
+}
+
+
+/* =========================
+   MOBILE (≤768px)
+========================= */
+@media (max-width: 768px) {
+  .contact {
+    padding: 80px 5%;
+  }
+
+  .contact h2 {
+    font-size: 2rem;
+  }
+
+  .contact p {
+    font-size: 0.95rem;
+  }
+
+  .links {
+    flex-wrap: wrap; /* important */
+    gap: 15px;
+  }
+
+  .links a {
+    font-size: 0.9rem;
+    padding: 7px 14px;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE (≤480px)
+========================= */
+@media (max-width: 480px) {
+  .contact {
+    padding: 60px 20px;
+  }
+
+  .contact h2 {
+    font-size: 1.7rem;
+  }
+
+  .contact p {
+    font-size: 0.9rem;
+  }
+
+  .links {
+    flex-direction: column; /* stack buttons */
+    align-items: center;
+    gap: 12px;
+  }
+
+  .links a {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+  }
+}

@@ -43,3 +43,68 @@
 nav .active {
   color: var(--primary);
 }
+
+/* =========================
+   TABLET (≤1024px)
+========================= */
+@media (max-width: 1024px) {
+  .nav {
+    padding: 15px 5%;
+  }
+
+  .nav ul {
+    gap: 20px;
+  }
+
+  .nav li {
+    font-size: 0.95rem;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+  }
+}
+
+
+/* =========================
+   MOBILE (≤768px)
+========================= */
+@media (max-width: 768px) {
+  .nav {
+    padding: 12px 4%;
+  }
+
+  .nav ul {
+    gap: 15px;
+  }
+
+  .nav li {
+    font-size: 0.85rem;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE (≤480px)
+========================= */
+@media (max-width: 480px) {
+  .nav {
+    padding: 10px 3%;
+  }
+
+  .nav ul {
+    gap: 10px;
+  }
+
+  .nav li {
+    font-size: 0.75rem;
+  }
+
+  .logo {
+    font-size: 0.9rem;
+  }
+}
