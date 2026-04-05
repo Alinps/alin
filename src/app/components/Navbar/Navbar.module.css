@@ -40,6 +40,6 @@
 }
 
 /* Active */
-.active {
+nav .active {
   color: var(--primary);
 }

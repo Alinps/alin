@@ -6,6 +6,7 @@ import About from "./components/About/About";
 import TechStack from "./components/TechStack/TechStack";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
+import Experience from "./components/Experience/Experience";
 
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
       <About />
       <TechStack />
       <Projects />
+      <Experience />
       <Contact />
        </>
     )}

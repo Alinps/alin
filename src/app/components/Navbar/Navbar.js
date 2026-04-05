@@ -3,38 +3,35 @@
 import { useEffect, useState } from "react";
 import styles from "./Navbar.module.css";
 
-const sections = ["home", "about", "tech", "projects", "contact"];
+const sections = ["about", "tech", "projects", "experience", "contact"];
 
 export default function Navbar() {
-  const [active, setActive] = useState("home");
+  const [active, setActive] = useState("");
 
   useEffect(() => {
-    const handleScroll = () => {
-      let current = "home";
-
-      sections.forEach((section) => {
-        const el = document.getElementById(section);
-        if (el) {
-          const top = el.offsetTop - 100;
-          if (window.scrollY >= top) {
-            current = section;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActive(entry.target.id);
           }
-        }
-      });
+        });
+      },
+      { threshold: 0.3 }
+    );
+    
+    sections.forEach((section) => {
+      const el = document.getElementById(section);
+      if (el) observer.observe(el);
+    });
 
-      setActive(current);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => observer.disconnect();
   }, []);
 
   const scrollToSection = (id) => {
-    const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth" });
-    }
+    document.getElementById(id)?.scrollIntoView({
+      behavior: "smooth",
+    });
   };
 
   return (

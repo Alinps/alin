@@ -8,11 +8,11 @@ export default function Cursor() {
 
   useEffect(() => {
     const moveCursor = (e) => {
-      const { clientX, clientY } = e;
+  const { clientX, clientY } = e;
 
-      cursorRef.current.style.transform =
-        `translate(${clientX}px, ${clientY}px)`;
-    };
+  cursorRef.current.style.left = `${clientX}px`;
+  cursorRef.current.style.top = `${clientY}px`;
+};
 
     window.addEventListener("mousemove", moveCursor);
 
