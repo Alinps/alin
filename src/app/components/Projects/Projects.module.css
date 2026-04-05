@@ -101,3 +101,8 @@
   padding: 4px 8px;
   border-radius: 5px;
 }
+
+.link {
+  color:var(--text);
+  font-size: 20px;
+}
