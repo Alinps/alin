@@ -1,0 +1,76 @@
+.about {
+  padding: 100px 20%;
+}
+
+/* Main layout */
+.wrapper {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+/* LEFT SIDE */
+.left {
+  flex: 1;
+}
+
+.left h2 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.left p {
+  color: #b0b0b0;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+/* Button */
+.btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 1px solid var(--primary);
+  background: transparent;
+  color: var(--primary);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: var(--primary);
+  color: var(--bg);
+}
+
+/* RIGHT SIDE GRID */
+.right {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Cards */
+.card {
+  background: var(--secondary);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.card h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-5px);
+  border: 1px solid var(--primary);
+}

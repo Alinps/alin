@@ -1,0 +1,40 @@
+.contact {
+  padding: 120px 8%;
+  text-align: center;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact h2 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  color: #b0b0b0;
+  margin-bottom: 30px;
+}
+
+/* Links */
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.links a {
+  text-decoration: none;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+}
+
+.links a:hover {
+  background: var(--primary);
+  color: var(--bg);
+}

@@ -1,0 +1,45 @@
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(11, 15, 26, 0.6);
+  backdrop-filter: blur(10px);
+
+  z-index: 1000;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* Scoped ul */
+.nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+/* Scoped li */
+.nav li {
+  cursor: pointer;
+  color: #888;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.nav li:hover {
+  color: var(--primary);
+}
+
+/* Active */
+.active {
+  color: var(--primary);
+}

@@ -1,0 +1,53 @@
+.tech {
+  padding:  25px 20%;
+
+}
+
+/* Title */
+.tech h2 {
+  font-size: 3rem;
+  font-weight: 300; /* KEY PART */
+  letter-spacing: -0.5px;
+  margin-bottom: 60px;
+}
+
+/* Grid layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 40px;
+  justify-items: center;
+}
+
+/* Each item */
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+/* Icon style */
+.icon {
+  font-size: 3rem;
+  color: #888;
+  transition: all 0.3s ease;
+}
+
+/* Text */
+.item p {
+  font-size: 0.9rem;
+  color: #aaa;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.item:hover .icon {
+  color: var(--primary);
+  transform: translateY(-5px) scale(1.1);
+}
+
+.item:hover p {
+  color: var(--text);
+}
