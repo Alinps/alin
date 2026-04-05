@@ -106,3 +106,98 @@
   color:var(--text);
   font-size: 20px;
 }
+
+/* =========================
+   TABLET (≤1024px)
+========================= */
+@media (max-width: 1024px) {
+  .projects {
+    padding: 80px 10%;
+  }
+
+  .timeline {
+    width: 100%;
+  }
+
+  .projects h2 {
+    font-size: 2.5rem;
+  }
+}
+
+
+/* =========================
+   MOBILE (≤768px)
+========================= */
+@media (max-width: 768px) {
+  .projects {
+    padding: 60px 5%;
+  }
+
+  .projects h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  /* Move timeline line to left */
+  .timeline::after {
+    left: 20px;
+  }
+
+  /* Full width containers */
+  .container {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 20px;
+  }
+
+  /* Remove left/right split */
+  .left,
+  .right {
+    left: 0;
+  }
+
+  /* Fix dots alignment */
+  .container::after {
+    left: 15px;
+    right: auto;
+  }
+
+  .right::after {
+    left: 15px;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE (≤480px)
+========================= */
+@media (max-width: 480px) {
+  .projects {
+    padding: 50px 20px;
+  }
+
+  .projects h2 {
+    font-size: 1.7rem;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .card h3 {
+    font-size: 1rem;
+  }
+
+  .card p {
+    font-size: 0.85rem;
+  }
+
+  .tags span {
+    font-size: 0.7rem;
+    padding: 3px 6px;
+  }
+
+  .link {
+    font-size: 16px;
+  }
+}
