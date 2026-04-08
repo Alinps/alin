@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import styles from "./Navbar.module.css";
 
-const sections = ["about", "tech", "projects", "experience", "contact"];
+const sections = ["about", "tech", "projects", "experience", "exploring", "contact"];
 
 export default function Navbar() {
   const [active, setActive] = useState("");
@@ -17,7 +17,7 @@ export default function Navbar() {
           }
         });
       },
-      { threshold: 0.3 }
+      { threshold: 0.8 }
     );
     
     sections.forEach((section) => {

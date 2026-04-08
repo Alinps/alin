@@ -30,6 +30,16 @@ export default function Hero() {
       >
         <a href="#projects">View Projects</a>
       </motion.div>
+      {/* <motion.div
+        className={styles.scrollIndicator}
+        animate={{ y: [0, 10, 0] }}
+        transition={{ duration: 2, repeat: Infinity }}
+      >
+        <div className={styles.mouse}>
+          <div className={styles.wheel} />
+        </div>
+        <span>Scroll to explore</span>
+      </motion.div> */}
     </section>
   );
 }

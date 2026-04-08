@@ -1,0 +1,90 @@
+.exploring {
+  padding: 100px 20%;
+}
+
+/* Heading */
+.exploring h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+/* List */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Item */
+.item {
+  padding: 12px 16px;
+  background: var(--secondary);
+  border-radius: 8px;
+  color: #bbb;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.item:hover {
+  color: var(--text);
+  transform: translateX(5px);
+  border: 1px solid var(--primary);
+}
+
+/* =========================
+   TABLET (≤1024px)
+========================= */
+@media (max-width: 1024px) {
+  .exploring {
+    padding: 80px 10%;
+  }
+
+  .exploring h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+  }
+}
+
+
+/* =========================
+   MOBILE (≤768px)
+========================= */
+@media (max-width: 768px) {
+  .exploring {
+    padding: 60px 5%;
+    text-align: center;
+  }
+
+  .exploring h2 {
+    font-size: 2rem;
+  }
+
+  .list {
+    gap: 12px;
+  }
+
+  .item {
+    font-size: 0.95rem;
+    padding: 10px 14px;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE (≤480px)
+========================= */
+@media (max-width: 480px) {
+  .exploring {
+    padding: 50px 20px;
+  }
+
+  .exploring h2 {
+    font-size: 1.7rem;
+  }
+
+  .item {
+    font-size: 0.9rem;
+    padding: 10px 12px;
+  }
+}
