@@ -63,7 +63,7 @@ export default function About() {
           </div>
 
           <div className={styles.card}>
-            <h3>1 Years</h3>
+            <h3>10 months</h3>
             <p>Experience</p>
           </div>
 

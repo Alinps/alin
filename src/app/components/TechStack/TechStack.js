@@ -18,7 +18,9 @@ import {
   SiDjango,
   SiJavascript,
   SiGo,
-  SiSpringboot
+  SiSpringboot,
+  SiVercel,
+  SiRender
 } from "react-icons/si";
 const techStack = [
   { name: "Django", icon: <SiDjango /> },
@@ -38,6 +40,8 @@ const techStack = [
 
   { name: "Git", icon: <FaGitAlt /> },
   { name: "Docker", icon: <FaDocker /> },
+  {name: "Render", icon:<SiRender />},
+  {name :"Vercel", icon: <SiVercel />}
 ];
 
 export default function TechStack() {
