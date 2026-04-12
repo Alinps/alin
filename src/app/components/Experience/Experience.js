@@ -8,9 +8,8 @@ const experience = [
   {
     title: "MashupStack Pvt Ltd",
     description:
-      "Worked as a Full Stack Developer Intern, contributing to the development and maintenance of web applications with a focus on both frontend and backend systems.",
-  },
-  
+      "Worked on designing and developing full-stack applications using React and Django, focusing on building REST APIs and optimizing database interactions for performance and scalability. Delivered 20+ technical sessions on full-stack development and mentored 50+ learners in debugging, problem-solving, and system design across Django, Spring Boot, and React applications. Bridged the gap between theoretical learning and practical implementation by guiding students through real-world development workflows and best practices."
+  }
 ];
 
 export default function Experience() {

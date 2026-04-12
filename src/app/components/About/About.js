@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import styles from "./About.module.css";
+import { FiDownload } from "react-icons/fi";
 
 export default function About() {
   return (
@@ -41,6 +42,9 @@ export default function About() {
             systems, and building production-level applications, while continuing to grow my 
             skills in embedded systems as well.
           </p>
+          <a href="/resume.pdf" download className={styles.btn}>
+            <FiDownload /> Resume
+          </a>
 
           {/* <button className={styles.btn}>Download Resume</button> */}
         </motion.div>
