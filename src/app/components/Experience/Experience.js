@@ -8,7 +8,7 @@ const experience = [
   {
     title: "MashupStack Pvt Ltd",
     description:
-      "Worked on designing and developing full-stack applications using React and Django, focusing on building REST APIs and optimizing database interactions for performance and scalability. Delivered 20+ technical sessions on full-stack development and mentored 50+ learners in debugging, problem-solving, and system design across Django, Spring Boot, and React applications. Bridged the gap between theoretical learning and practical implementation by guiding students through real-world development workflows and best practices."
+      "Worked on designing and developing full-stack applications using React and Django, focusing on building REST APIs and optimizing database interactions for performance and scalability. Delivered 20+ technical sessions on full-stack development and mentored 50+ learners in debugging, problem-solving, and system design across Django, Spring Boot, and React applications."
   }
 ];
 
